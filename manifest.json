@@ -7,12 +7,12 @@
 
   "content_scripts": [
     {
-      "matches": ["twitter.com/*", "twitter.com"],
-      "js": ["tril.js"],
+      "matches": ["http://www.twitter.com/*"],
+      "js": ["tril.js"]
     }
   ],
 
   "permissions": [
     "http://www.twitter.com/"
-  ],
+  ]
 }
