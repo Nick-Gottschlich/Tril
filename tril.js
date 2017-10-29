@@ -11,15 +11,16 @@ var observer = new MutationObserver(function(mutations) {
 
     // find the username of tweeters on the page (not @, so for @dril this is "wint")
     var tweetUsernameList = document.getElementsByClassName('fullname show-popup-with-id ')
+    for (index in tweetUsernameList) {
+      if (tweetUsernameList[index].parentElement && tweetUsernameList[index].parentElement.parentElement.getAttribute("data-user-id") === '16298441') {
+        if (tweetUsernameList[index].getAttribute("data-username-swapped") !== "true") {
+          tweetUsernameList[index].innerHTML = 'Donald J. Trump';
+          tweetUsernameList[index].setAttribute("data-username-swapped", "true");
+        }
+      }
+    }
 
-    // so this creates an infinite loop, since each of these changes is a DOM change, so mutation observer fires again... need a way to ignore these changes...
-    // I could maybe go to a function, disconnect the observer, make the changes and then reconnect the observer??
-    // for (index in tweetUsernameList) {
-    //   // @dril tweet
-    //   if (tweetUsernameList[index].parentElement && tweetUsernameList[index].parentElement.parentElement.getAttribute("data-user-id") === '16298441') {
-    //     tweetUsernameList[index].innerHTML = 'Donald J. Trump';
-    //   }
-    // }
+    // find the @handle or tweeters on the page (like @dril)
 });
 
 console.log('Help Im trapped in the dev tools and cant find a way out');
@@ -37,17 +38,11 @@ observer.observe(document.getElementById('timeline'), {
 });
 
 // // find the username of tweeters on the page (not @, so for @dril this is "wint")
-var tweetUsernameList = document.getElementsByClassName('fullname show-popup-with-id ')
-
-for (index in tweetUsernameList) {
-  // @dril tweet
-  if (tweetUsernameList[index].parentElement && tweetUsernameList[index].parentElement.parentElement.getAttribute("data-user-id") === '16298441') {
-    tweetUsernameList[index].innerHTML = 'Donald J. Trump';
-  }
-}
-
-var changes = observer.takeRecords();
-
-console.log('hiiii')
-console.log(changes)
-console.log('byeee')
+// var tweetUsernameList = document.getElementsByClassName('fullname show-popup-with-id ')
+//
+// for (index in tweetUsernameList) {
+//   // @dril tweet
+//   if (tweetUsernameList[index].parentElement && tweetUsernameList[index].parentElement.parentElement.getAttribute("data-user-id") === '16298441') {
+//     tweetUsernameList[index].innerHTML = 'Donald J. Trump';
+//   }
+// }
