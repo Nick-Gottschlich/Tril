@@ -2,6 +2,7 @@
   "manifest_version": 2,
 
   "name": "Tril",
+  "author": "Nick Gottschlich @NickGottschlich",
   "version": "1.0",
   "description": "A Google Chrome Extension that swaps @dril and @realDonaldTrump tweets",
 
