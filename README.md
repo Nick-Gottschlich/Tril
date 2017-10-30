@@ -2,6 +2,8 @@
 
 This is a chrome extension that swaps `@realDonaldTrump` and `@dril` tweets on twitter. Inspired by https://redd.it/5xnvn9
 
+Install the extension here: https://chrome.google.com/webstore/detail/tril/dkneemnajjjblcgpdfpmcmihdjclpopj?hl=en-US&gl=US
+
 # Where is this working
 
 - timeline
