@@ -18,7 +18,6 @@ If you like this, tweet it!
 - could probably make whole profile pages swap
 - change accounts in search bar
 - randomize function?
-- verification icon (please spam twitter to verify @dril, he deserves it)
 
 # Why would you do this
 

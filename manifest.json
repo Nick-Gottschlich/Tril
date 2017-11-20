@@ -3,7 +3,7 @@
 
   "name": "Tril",
   "author": "Nick Gottschlich @NickGottschlich",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "A Google Chrome Extension that swaps @dril and @realDonaldTrump tweets",
 
   "icons": {
