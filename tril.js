@@ -12,7 +12,7 @@ var observer = new MutationObserver(function(mutations) {
       // if @dril tweets, swap for @realDonaldTrump
       if (tweetUsernameList[index].parentElement && tweetUsernameList[index].parentElement.parentElement.getAttribute("data-user-id") === drilID) {
         if (tweetUsernameList[index].getAttribute("data-username-swapped") !== "true") {
-          tweetUsernameList[index].innerHTML = 'Donald J. Trump';
+          tweetUsernameList[index].innerHTML = 'Donald J. Trump <img src="https://raw.githubusercontent.com/Nick-Gottschlich/Tril/master/twitter%20verification%20icon.JPG" style="height:12px"/>';
           tweetUsernameList[index].setAttribute("data-username-swapped", "true");
         }
       }

@@ -4,6 +4,8 @@ This is a chrome extension that swaps `@realDonaldTrump` and `@dril` tweets on t
 
 Install the extension here: https://chrome.google.com/webstore/detail/tril/dkneemnajjjblcgpdfpmcmihdjclpopj?hl=en-US&gl=US
 
+If you like this, tweet it!
+
 # Where is this working
 
 - timeline
@@ -16,6 +18,7 @@ Install the extension here: https://chrome.google.com/webstore/detail/tril/dknee
 - could probably make whole profile pages swap
 - change accounts in search bar
 - randomize function?
+- verification icon (please spam twitter to verify @dril, he deserves it)
 
 # Why would you do this
 
